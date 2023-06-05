@@ -3,13 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background: #eee;
   padding: 0 16px;
 }
+
 .players-container {
   background: #fff;
   border-radius: 7px;
@@ -19,6 +22,7 @@ body {
   margin: 16px;
   float: left;
 }
+
 .players-container h2 {
   text-align: center;
   margin-bottom: 10px;
@@ -45,6 +49,7 @@ body {
   flex-direction: column;
   min-height: 50vh;
 }
+
 .player-container h2 {
   text-align: center;
   margin-bottom: 10px;
@@ -57,29 +62,31 @@ body {
 }
 
 
-  header {
-    background-color: #f5ba13;
-    margin: auto -16px;
-    padding: 16px 32px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  }
-  
-  header h1 {
-    color: #fff;
-    font-family: "McLaren", cursive;
-    font-weight: 200;
-  }
-  .btn {
-    padding: 15px 25px;
-    border-radius: 2em;
-    border: solid #e7f6f2;
-  }
-  
-  .details-button:hover {
-    transition: all 0.3s ease 0s;
-    background: #19bb3f;
-  }
-  .delete-button:hover {
-    transition: all 0.3s ease 0s;
-    background: #f64f59;
-  }
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 2em;
+  border: solid #e7f6f2;
+}
+
+.details-button:hover {
+  transition: all 0.3s ease 0s;
+  background: #19bb3f;
+}
+
+.delete-button:hover {
+  transition: all 0.3s ease 0s;
+  background: #f64f59;
+}
