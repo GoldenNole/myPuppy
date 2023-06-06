@@ -153,7 +153,9 @@ const renderNewPlayerForm = () => {
         <label for="breed">Breed</label>
         <input id="breed" name="breed" placeholder="Lab">
         <label for="status">Status</label>
-        <input id="status" name="status" placeholder="feild">
+        <label for="img">IMGURL</label>
+        <input id="img" name="img" placeholder="img">
+        <input id="status" name="status" placeholder="field">
         <button type="submit">Submit</button>
         </form>`;
         newPlayerFormContainer.innerHTML = formHtml;
@@ -163,7 +165,8 @@ const renderNewPlayerForm = () => {
             const data = {
                 status: document.getElementById("status").value,
                 name: document.getElementById("name").value,
-                breed: document.getElementById("breed").value
+                breed: document.getElementById("breed").value,
+                imageurl: document.getElementById("img").value
             };
             const newDog = await addNewPlayer(data);
             console.log(newDog);
