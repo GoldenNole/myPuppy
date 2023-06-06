@@ -147,17 +147,17 @@ const renderAllPlayers = async (playerList) => {
 const renderNewPlayerForm = () => {
     try {
         const formHtml = `
-      <form class="players-container">
-        <label for="name">Name</label>
-        <input id="name" name="name" placeholder="Banjo">
-        <label for="breed">Breed</label>
-        <input id="breed" name="breed" placeholder="Lab">
-        <label for="status">Status</label>
-        <label for="img">IMGURL</label>
-        <input id="img" name="img" placeholder="img">
-        <input id="status" name="status" placeholder="field">
-        <button type="submit">Submit</button>
-        </form>`;
+        <form class="players-container">
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Banjo">
+          <label for="breed">Breed</label>
+          <input id="breed" name="breed" placeholder="Lab">
+          <label for="status">Status</label>
+          <input id="status" name="status" placeholder="feild">
+          <label for="img">IMGURL</label>
+          <input id="img" name="img" placeholder="img">
+          <button type="submit">Submit</button>
+          </form>`;
         newPlayerFormContainer.innerHTML = formHtml;
 
         newPlayerFormContainer.addEventListener("submit", async (event) => {
@@ -166,7 +166,7 @@ const renderNewPlayerForm = () => {
                 status: document.getElementById("status").value,
                 name: document.getElementById("name").value,
                 breed: document.getElementById("breed").value,
-                imageurl: document.getElementById("img").value
+                imageUrl: document.getElementById("img").value
             };
             const newDog = await addNewPlayer(data);
             console.log(newDog);
