@@ -27,14 +27,15 @@ const fetchSinglePlayer = async (playerId) => {
         const player = data.data.player;
 
         playerContainer.innerHTML = "";
+        newPlayerFormContainer.innerHTML = "";
         const playerDetailsElement = document.createElement("div");
         playerDetailsElement.classList.add("player-details");
         playerDetailsElement.innerHTML = `
                         <div class="player-container">
                         <h2>${player.name}</h2>
                         <img src="${player.imageUrl}" alt="${player.name}">
-                        <h3>${player.breed}</h3>
-                        <h3>${player.status}</h3>
+                        <h3>Breed: ${player.breed}</h3>
+                        <h3> Status: ${player.status}</h3>
                         <button class="close-button btn">Close</button>
                         </div>
             `;
@@ -178,7 +179,10 @@ const renderNewPlayerForm = () => {
         <label for="breed">Breed:</label>
         <input id="breed" name="breed" placeholder="Chocolate Labrador"><br>
         <label for="status">Status:</label>
-        <input id="status" name="status" placeholder="bench"><br>
+        <select id="status">
+            <option value="bench">Bench</option>
+            <option value="field">Field</option>
+        </select> <br>
         <label for="img">Image:</label>
         <input id="img" name="img" placeholder="img-URL"><br>
         <button class="btn" type="submit">Submit</button>
